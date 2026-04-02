@@ -1,0 +1,56 @@
+/*文章的整体背景，渐变色设置*/
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#web_bg {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    background-image: url("../img/bg.png"), 
+	linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), 
+}
+
+
+/* 主页所有文章页面背景 */
+#aside_content .card-widget,
+#recent-posts>.recent-post-item,
+.layout_page>div:first-child:not(.recent-posts),
+.layout_post>#page,
+.layout_post>#post,
+.read-mode .layout_post>#post {
+	/* 以下代表透明度为0.5 */
+	background: rgba(255, 255, 255, .5);
+}
+
+/*侧边栏页面*/
+#aside-content>.card-widget {
+	background: rgba(255, 255, 255, .6);
+}
+
+#aside-content>.sticky_layout>.card-widget {
+	background: rgba(255, 255, 255, .6);
+}
+
+/*文章页面*/
+.layout>#post {
+	background: rgba(255, 255, 255, .6);
+}
+
+/*分类页面*/
+.layout>#page {
+
+	background: rgba(255, 255, 255, .6);
+}
+
+/*时间轴页面*/
+.layout>#archive {
+	background: rgba(255, 255, 255, .6);
+}
